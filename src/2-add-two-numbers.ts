@@ -23,8 +23,8 @@ function addTwoNumbers(
     cur.next = new ListNode(cn % 10)
     cur = cur.next
 
-    l1 = l1?.next
-    l2 = l2?.next
+    l1 = l1?.next || null
+    l2 = l2?.next || null
   }
   if (moveUp) cur.next = new ListNode(1)
   return node.next
